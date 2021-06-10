@@ -7,9 +7,14 @@ import Sidebar from "./screens/sidebar";
 
 function App() {
   return (
-    <div className="App_flex">
+    <div className="App">
       <Sidebar />
-      //<Header />
+      <Header />
+
+    <div className="app__body">
+      <h1> The Raman Effect</h1>
+    </div>
+          
     </div>
   );
 }
