@@ -1,21 +1,18 @@
 import React from 'react';
+import Navbar from './components/Navbar';
+import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
 import './App.css';
-import './props.css';
-import Header from "./screens/header";
-
-import Sidebar from "./screens/sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <Header />
-
-    <div className="app__body">
-      <h1> The Raman Effect</h1>
-    </div>
-          
-    </div>
+    <>
+   <Router>
+     <Navbar />
+       <Switch>
+         <Route path='/' exact />
+       </Switch>
+   </Router>
+   </>
   );
 }
 
